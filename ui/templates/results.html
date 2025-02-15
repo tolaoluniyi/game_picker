@@ -1,1 +1,25 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results</title>
+</head>
+<body>
+    <h1>Historical Picks</h1>
+    <table border="1">
+        <tr>
+            <th>Sport</th>
+            <th>Teams</th>
+            <th>Pick</th>
+            <th>Confidence</th>
+        </tr>
+        {% for row in data %}
+        <tr>
+            <td>{{ row.sport }}</td>
+            <td>{{ row.teams }}</td>
+            <td>{{ row.pick }}</td>
+            <td>{{ row.confidence }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
